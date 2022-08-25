@@ -3,9 +3,11 @@ import { ReactComponent as Logo } from "assets/logo.svg";
 import Searcher from "./Searcher/Searcher";
 import { useState } from "react";
 import Filters from "./Filters/Filters";
+import Ordenador from "./Ordenador/Ordenador";
 
 export default function Menu() {
   const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState<number | null>(null);
 
   return (
     <main>
@@ -19,7 +21,8 @@ export default function Menu() {
         <h3 className={style.menu__title}>Menu</h3>
         <Searcher search={search} setSearch={setSearch} />
         <div className={style.cardapio__filtros}>
-          <Filters />
+          <Filters filter={filter} setFilter={setFilter}/>
+          <Ordenador/>
         </div>
       </section>
     </main>
