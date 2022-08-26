@@ -1,4 +1,4 @@
-// são as opções do menu, que vem de um arquivo json e que é renderizado o label. aplica um estilo caso a opção esteja selecionada ou não. quando o usuario clica na opção desejada, seta o setFilter.
+// são as opções do menu, que vem de um arquivo json e que é renderizado o label. aplica um estilo caso a opção esteja selecionada ou não. quando o usuario clica na opção desejada, seta o setOption.
 import options from "./options.json";
 import style from "./Options.module.scss";
 

@@ -4,6 +4,8 @@ import Searcher from "./Searcher/Searcher";
 import { useState } from "react";
 import Options from "./Options/Options";
 import Filters from "./Filters/Filters";
+import Items from './Items/Items'
+
 
 export default function Menu() {
   const [search, setSearch] = useState("");
@@ -19,6 +21,7 @@ export default function Menu() {
           <Options option={option} setOption={setOption}/>
           <Filters filter={filter} setFilter={setFilter}/>
         </div>
+        <Items/>
       </section>
     </main>
   );

@@ -8,15 +8,12 @@
       "id": 2
     },
     {
-      "label": "Aves",
+      "label": "Combos",
       "id": 3
     },
-    {
-      "label": "Vegetarianos",
-      "id": 4
-    },
+  
     {
       "label": "Veganos",
-      "id": 5
+      "id": 4
     }
   ]
