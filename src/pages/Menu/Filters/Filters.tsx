@@ -1,34 +1,54 @@
-import filters from "./filters.json";
+//filtros de pesquisa pro usuário selecionar. retorna um botao que ao ser clicado, mostra/esconde uma lista de filtros. quando clicada no filtro desejado (que vem de um json), seta o setFilter.
 import style from "./Filters.module.scss";
+import filters from "./filters.json";
+import { useState } from "react";
+import classNames from "classnames";
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
-
-type IOption = typeof filters[0];
 
 interface Props {
-  filter: null | number;
-  setFilter: React.Dispatch<React.SetStateAction<number | null>>;
+  filter: string;
+  setFilter: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function Filters({ filter, setFilter }: Props) {
-  function selectFilters(option: IOption) {
-    if (filter === option.id) return setFilter(null);
-    return setFilter(option.id);
-  }
+
+  const [open, setOpen] = useState(false);
+
+  const selectedFilterName =
+    filter && filters.find((item) => item.value === filter)?.name;
 
   return (
-    <div className={style.filtros}>
-      {filters.map((option) => (
-        <button
-          className={` 
-          ${style.filtros__filtro} ${
-            filter === option.id ? style["filtros__filtro--ativo"] : " "
-          }`}
-          key={option.id}
-          onClick={() => selectFilters(option)}
-        >
-          {option.label}
-        </button>
-      ))}
-    </div>
+    <button
+      onBlur={() => setOpen(false)}
+      onClick={() => setOpen(!open)}
+      className={classNames({
+        [style.ordenador]: true,
+        [style["ordenador--ativo"]]: filter !== "",
+      })}
+    >
+      <span>{selectedFilterName || "Ordenar por:"}</span>
+      {open ? (
+        <MdKeyboardArrowUp size={20} />
+      ) : (
+        <MdKeyboardArrowDown size={20} />
+      )}
+      <div
+        className={classNames({
+          [style.ordenador__options]: true,
+          [style["ordenador__options--ativo"]]: open,
+        })}
+      >
+        {filters.map((item) => (
+          <div
+            onClick={() => setFilter(item.value)}
+            className={style.ordenador__option}
+            key={item.value}
+          >
+            {item.name}
+          </div>
+        ))}
+      </div>
+    </button>
   );
 }

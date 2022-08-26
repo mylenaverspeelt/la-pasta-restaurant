@@ -1,3 +1,4 @@
+//barra de pesquisa. pega o input do usuario e seta o setSearch.
 import React from "react";
 import style from "./Searcher.module.scss";
 import { CgSearch } from "react-icons/cg";

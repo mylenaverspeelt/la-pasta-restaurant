@@ -1,0 +1,22 @@
+[
+    {
+      "label": "Massas",
+      "id": 1
+    },
+    {
+      "label": "Carnes",
+      "id": 2
+    },
+    {
+      "label": "Aves",
+      "id": 3
+    },
+    {
+      "label": "Vegetarianos",
+      "id": 4
+    },
+    {
+      "label": "Veganos",
+      "id": 5
+    }
+  ]

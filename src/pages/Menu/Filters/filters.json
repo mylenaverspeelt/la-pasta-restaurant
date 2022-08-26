@@ -1,18 +1,20 @@
 [
     {
-      "label": "Massas",
-      "id": 1
+      "name": "",
+      "value": ""
     },
     {
-      "label": "Carnes",
-      "id": 2
+      "name": "Porção",
+      "value": "porcao"
     },
     {
-      "label": "Combos",
-      "id": 3
+      "name": "Qtd. pessoas",
+      "value": "qtd_pessoas"
     },
     {
-      "label": "Veganos",
-      "id": 4
+      "name": "Preço",
+      "value": "preco"
     }
   ]
+
+  

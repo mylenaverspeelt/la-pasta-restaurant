@@ -1,3 +1,4 @@
+//arquivo que faz link com o html, renderizando o app
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
