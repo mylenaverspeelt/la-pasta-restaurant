@@ -1,19 +1,23 @@
 [
     {
       "name": "",
-      "value": ""
+      "value": "",
+      "id": 0
     },
     {
       "name": "Porção",
-      "value": "porcao"
+      "value": "porcao",
+      "id": 1
     },
     {
       "name": "Qtd. pessoas",
-      "value": "qtd_pessoas"
+      "value": "qtd_pessoas",
+      "id": 2
     },
     {
       "name": "Preço",
-      "value": "preco"
+      "value": "preco",
+      "id": 3
     }
   ]
 

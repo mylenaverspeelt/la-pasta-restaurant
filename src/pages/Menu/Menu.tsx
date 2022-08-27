@@ -21,7 +21,7 @@ export default function Menu() {
           <Options option={option} setOption={setOption}/>
           <Filters filter={filter} setFilter={setFilter}/>
         </div>
-        <Items/>
+        <Items search={search} filter={filter} option={option}/>
       </section>
     </main>
   );
