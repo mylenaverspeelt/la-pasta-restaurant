@@ -23,11 +23,6 @@ export default function Items({ search, filter, option }: Props) {
     return true;
   }
 
-
-
-
-
-
   function order(newList: typeof menu) {
     switch (filter) {
       case "porcao":
