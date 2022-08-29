@@ -9,7 +9,7 @@ import Items from './Items/Items'
 
 export default function Menu() {
   const [search, setSearch] = useState("");
-  const [option, setOption] = useState<number | null>(null);
+  const [userSelectedOption, setuserSelectedOption] = useState<number | null>(null);
   const [filter, setFilter] = useState('')
 
   return (
@@ -18,10 +18,10 @@ export default function Menu() {
         <h3 className={style.menu__title}>Menu</h3>
         <Searcher search={search} setSearch={setSearch} />
         <div className={style.cardapio__filtros}>
-          <Options option={option} setOption={setOption}/>
+          <Options userSelectedOption={userSelectedOption} setUserSelectedOption={setuserSelectedOption}/>
           <Filters filter={filter} setFilter={setFilter}/>
         </div>
-        <Items search={search} filter={filter} option={option}/>
+        <Items search={search} filter={filter} userSelectedOption={userSelectedOption}/>
       </section>
     </main>
   );

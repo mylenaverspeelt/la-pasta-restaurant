@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 interface Props {
   search: string;
   filter: string;
-  option: number | null;
+  userSelectedOption: number | null;
 }
 
-export default function Items({ search, filter, option }: Props) {
+export default function Items({ search, filter, userSelectedOption }: Props) {
   const [list, setList] = useState(menu);
 
   function searchTest(title: string) {
@@ -19,18 +19,18 @@ export default function Items({ search, filter, option }: Props) {
   }
 
   function filterTest(id: number) {
-    if (filter !== null) return filter === id;
+    if (userSelectedOption !== null) return userSelectedOption === id;
     return true;
   }
 
   function order(newList: typeof menu) {
     switch (filter) {
       case "porcao":
-        return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+        return newList.sort((a, b) => a.size > b.size ? 1 : -1);
         case 'qtde_pessoas':
-          return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+          return newList.sort((a, b) => a.serving > b.serving ? 1 : -1);
           case 'preco':
-          return newList.sort((a, b) => (a.price > b.price ? 1 : -1))
+          return newList.sort((a, b) => a.price > b.price ? 1 : -1)
           default:
             return newList
 
@@ -42,7 +42,7 @@ export default function Items({ search, filter, option }: Props) {
       (item) => searchTest(item.title) && filterTest(item.category.id)
     );
     setList(order(newList));
-  }, [search, filter]);
+  }, [search, filter, userSelectedOption]);
 
   return (
     <div className={style.itens}>
