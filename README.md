@@ -11,8 +11,8 @@ A fictitious italian restaurant menu made with React and Typescript!
 
 ### Libraries used
 
-- [react-icons]}(https://react-icons.github.io/react-icons/)
-- [classNames] (https://www.npmjs.com/package/classnames/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [classNames](https://www.npmjs.com/package/classnames/)
 - [styled-components](https://styled-components.com/)
 
 ## Step 1 - Dependencies
