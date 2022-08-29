@@ -2,7 +2,7 @@
 
 A fictitious italian restaurant menu made with React and Typescript!
 
-<img src="./src/assets/img/read-me-img.png"/>
+<img src="./public/assets/read-me-img.png"/>
 
 ### Features
 
