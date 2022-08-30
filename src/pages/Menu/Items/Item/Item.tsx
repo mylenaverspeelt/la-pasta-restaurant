@@ -1,5 +1,5 @@
 import style from "./Item.module.scss";
-import classNames from 'classnames'
+import classNames from "classnames";
 
 interface Props {
   title: string;

@@ -1,4 +1,4 @@
-import menu from "./items.json";
+import menu from "../../../data/menu.json";
 import Item from "./Item/Item";
 import style from "./Items.module.scss";
 import { useEffect, useState } from "react";
@@ -25,14 +25,14 @@ export default function Items({ search, filter, userSelectedOption }: Props) {
 
   function order(newList: typeof menu) {
     switch (filter) {
-      case "porcao":
-        return newList.sort((a, b) => a.size > b.size ? 1 : -1);
-        case 'qtde_pessoas':
-          return newList.sort((a, b) => a.serving > b.serving ? 1 : -1);
-          case 'preco':
-          return newList.sort((a, b) => a.price > b.price ? 1 : -1)
-          default:
-            return newList
+    case "porcao":
+      return newList.sort((a, b) => a.size > b.size ? 1 : -1);
+    case "qtde_pessoas":
+      return newList.sort((a, b) => a.serving > b.serving ? 1 : -1);
+    case "preco":
+      return newList.sort((a, b) => a.price > b.price ? 1 : -1);
+    default:
+      return newList;
 
     }
   }

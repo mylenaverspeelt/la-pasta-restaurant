@@ -1,5 +1,4 @@
-import { ReactComponent as Logo } from "assets/logo.svg";
-import style from './Header.module.scss'
+import style from "./Header.module.scss";
 
 export default function Header() {
   return (

@@ -4,13 +4,13 @@ import Searcher from "./Searcher/Searcher";
 import { useState } from "react";
 import Options from "./Options/Options";
 import Filters from "./Filters/Filters";
-import Items from './Items/Items'
+import Items from "./Items/Items";
 
 
 export default function Menu() {
   const [search, setSearch] = useState("");
   const [userSelectedOption, setuserSelectedOption] = useState<number | null>(null);
-  const [filter, setFilter] = useState('')
+  const [filter, setFilter] = useState("");
 
   return (
     <main>
