@@ -3,11 +3,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "normalize.css";
 import "./index.css";
-import Homepage from "pages/Homepage/Homepage";
-import Menu from "pages/Menu/Menu";
-import Header from "pages/Header/Header";
-
-const currentComponent = window.location.pathname === "/" ?<Homepage /> : <Menu />;
+import Header from "components/Header/Header";
+import Router from "../src/routes.js";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,8 +13,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Header />
-    {currentComponent}
+    <Router />
   </React.StrictMode>
 );
 

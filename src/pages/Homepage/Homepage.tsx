@@ -1,3 +1,4 @@
+import Header from "components/Header/Header";
 import menu from "../../data/menu.json";
 import style from "./Homepage.module.scss";
 
@@ -9,6 +10,7 @@ export default function Homepage() {
 
   return (
     <section>
+      <Header />
       <h3 className={style.titulo}>Recomendações da cozinha</h3>
       <div className={style.recomendados}>
         {recommendedDishes.map((item) => (

@@ -1,6 +1,6 @@
 //renderiza o app
 
-import Header from "./pages/Header/Header";
+import Header from "./components/Header/Header";
 import React from "react";
 import Menu from "./pages/Menu/Menu";
 

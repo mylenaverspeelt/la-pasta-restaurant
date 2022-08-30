@@ -14,6 +14,13 @@ A fictitious italian restaurant menu made with React and Typescript!
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [classNames](https://www.npmjs.com/package/classnames/)
 - [styled-components](https://styled-components.com/)
+- [ESLint](https://eslint.org/)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+
+### Original reposS
+- [aluroni-introducao](https://github.com/alura-cursos/aluroni-introducao)
+- [aluroni-router](https://github.com/alura-cursos/aluroni-router)
+- [aluroni-performance](https://github.com/alura-cursos/aluroni-performance)
 
 ## Step 1 - Dependencies
 
