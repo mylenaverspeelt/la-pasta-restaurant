@@ -1,7 +1,10 @@
 import menu from "../../data/menu.json";
 import style from "./Homepage.module.scss";
+import nossaCasa from "../../assets/homepage/nossaCasa.png";
 
 export default function Homepage() {
+
+  //sortear 3 imagens aleatorias
   let recommendedDishes = [...menu];
   recommendedDishes = recommendedDishes
     .sort(() => 0.5 - Math.random())
@@ -17,10 +20,18 @@ export default function Homepage() {
               <img src={item.photo} alt={item.title} />
               <p className={style.paragrafo}>{item.title}</p>
             </div>
-            <button className={style.recomendado__botao}>Ver mais</button>
+            <button className={style.recomendado__botao}>See more</button>
           </div>
         ))}
       </div>
+      <h3 className={style.titulo}>Our place</h3>
+      <div className={style.nossaCasa}> 
+        <img src={nossaCasa} alt="Casa do La Pasta" />
+        <p className={style.nossaCasa__endereco}>
+            Avenida Agamenon, 420 <br/> Caruaru - PE <br/> 
+        </p>
+      </div>
+
     </section>
   );
 }

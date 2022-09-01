@@ -1,3 +1,5 @@
+// recebe via props o que o usuario pesquisou OU se ele clicou na opção desejada E se ele utilizou algum filtro de busca, retorna a pesquisa do usuário de acordo com o que ele escolheu, que no caso é um componente a parte, o Item.
+
 import menu from "../../../data/menu.json";
 import Item from "./Item/Item";
 import style from "./Items.module.scss";

@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* css gerais da pagina */
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 * {
   box-sizing: border-box;

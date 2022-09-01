@@ -1,0 +1,53 @@
+@import "styles/variaveis";
+@import "styles/breakpoints";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+.container {
+  padding: 20px $padding-horizontal;
+  @media (max-width: $desktop_xsm) {
+    padding: 20px $padding-horizontal-mobile;
+  }
+  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+    padding: 20px $padding-horizontal-sm;
+  }
+  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    padding: 20px $padding-horizontal-md;
+  }
+}
+
+.sobreNos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+    &__texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: justify;
+  p {
+        font-family: 'Josefin Sans', sans-serif;
+      }
+    }
+  }
+  .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    &__imagem {
+      width: 600px;
+      img {
+        border-radius: 5px;
+        width: 100%;
+      }
+    }
+  }
+
+  .titulo{
+    color: $dark;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  
+  }

@@ -1,4 +1,5 @@
-//renderiza o menu/cardapio dependendo do que tiver no searcher/filtro/ordenador
+//renderiza o menu/cardapio se não rolar nada, ele apenas renderiza o menu. caso tenha algum input do usuario ou se ele selecionar alguma tab, vão ser passadas as determidas props
+
 import style from "./Menu.module.scss";
 import Searcher from "./Searcher/Searcher";
 import { useState } from "react";

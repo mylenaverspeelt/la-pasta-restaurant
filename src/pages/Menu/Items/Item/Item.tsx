@@ -1,3 +1,5 @@
+//item em si do cardapio, que vai ser renderizado apos a escolha do usuario. é o elemento em si, com foto, porção, valor...
+
 import style from "./Item.module.scss";
 import classNames from "classnames";
 
@@ -34,14 +36,14 @@ export default function Item({
           <p>{description}</p>
         </div>
         <div className={style.item__tags}>
-          <div className={classNames({
-            [style.item__tipo]: true,
-            [style[`item__tipo__${category.label.toLowerCase()}`]]: true
-          })}
-          
-          
-          
-          >{category.label}</div>
+          <div
+            className={classNames({
+              [style.item__tipo]: true,
+              [style[`item__tipo__${category.label.toLowerCase()}`]]: true,
+            })}
+          >
+            {category.label}
+          </div>
           <div className={style.item__porcao}>{size}g</div>
           <div className={style.item__qtdpessoas}>
             Serve {serving} pessoa{serving === 1 ? "" : "s"}{" "}
