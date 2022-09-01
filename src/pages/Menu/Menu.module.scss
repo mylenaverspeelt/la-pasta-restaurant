@@ -1,7 +1,7 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
 
-.menu {
+.container {
   padding: 20px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: 20px $padding-horizontal-mobile;
@@ -38,4 +38,11 @@
     margin-bottom: 30px;
     width: 100%;
   }
+}
+
+.titulo{
+  color: $dark;
+  font-size: 3rem;
+  margin-bottom: 30px;
+
 }

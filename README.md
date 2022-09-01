@@ -17,7 +17,7 @@ A fictitious italian restaurant menu made with React and Typescript!
 - [ESLint](https://eslint.org/)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 
-### Original reposS
+### Original repos
 - [aluroni-introducao](https://github.com/alura-cursos/aluroni-introducao)
 - [aluroni-router](https://github.com/alura-cursos/aluroni-router)
 - [aluroni-performance](https://github.com/alura-cursos/aluroni-performance)

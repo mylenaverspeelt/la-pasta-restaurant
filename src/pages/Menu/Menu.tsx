@@ -5,7 +5,6 @@ import { useState } from "react";
 import Options from "./Options/Options";
 import Filters from "./Filters/Filters";
 import Items from "./Items/Items";
-import Header from "components/Header/Header";
 
 
 export default function Menu() {
@@ -15,9 +14,8 @@ export default function Menu() {
 
   return (
     <main>
-      <Header />
-      <section className={style.menu}>
-        <h3 className={style.menu__title}>Menu</h3>
+      <section className={style.container}>
+        <h3 className={style.titulo}>Menu</h3>
         <Searcher search={search} setSearch={setSearch} />
         <div className={style.cardapio__filtros}>
           <Options userSelectedOption={userSelectedOption} setUserSelectedOption={setuserSelectedOption}/>
