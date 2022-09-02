@@ -1,7 +1,7 @@
 [
     {
-      "title": "Macarrão mediterrâneo",
-      "description": "Macarrão spaghetti com frutos-do-mar e especíarias, especialidade da cozinha. Atenção: Contém camarão e outros frutos-do-mar!",
+      "title": "Mediterranean Spaghetti",
+      "description": "Spaghetti noodles with seafood, a lot of cherry tomato and spices. Warning: Contains shrimp and other seafood!",
       "photo": "/assets/dishes/macarrao_mediterraneo.png",
       "size": 400,
       "serving": 2,
@@ -9,12 +9,12 @@
       "id": 1,
       "category": {
         "id": 1,
-        "label": "Massas"
+        "label": "Pastas"
       }
     },
     {
-      "title": "Macarrão da casa",
-      "description": "Macarrão com frutos-do-mar e especíarias, especialidade da cozinha. Atenção: Contém camarão e outros frutos-do-mar!",
+      "title": "Signature Pasta",
+      "description": "Fettuccine pasta with filet mignon cubes, herbs and spices.",
       "photo": "/assets/dishes/macarrao_da_casa.png",
       "size": 400,
       "serving": 2,
@@ -22,12 +22,12 @@
       "id": 2,
       "category": {
         "id": 1,
-        "label": "Massas"
+        "label": "Pastas"
       }
     },
     {
-      "title": "Macarrão com chilli",
-      "description": "Macarrão fetuccine com molho de chilli e especiárias.",
+      "title": "Fettuccine chilli",
+      "description": "Fettuccine pasta with chili sauce and spices.",
       "photo": "/assets/dishes/macarrao_com_chilli.png",
       "size": 350,
       "serving": 1,
@@ -35,12 +35,12 @@
       "id": 3,
       "category": {
         "id": 1,
-        "label": "Massas"
+        "label": "Pastas"
       }
     },
     {
-      "title": "Salada da casa com salmão grelhado",
-      "description": "Salada da casa (alface, rúcula, cenoura) com salmão.",
+      "title": "Signature Salad with Grilled Salmon",
+      "description": "Organic salad (lettuce, rocket and carrots) with salmon (180g)",
       "photo": "/assets/dishes/salada_da_casa.png",
       "size": 450,
       "serving": 1,
@@ -48,11 +48,11 @@
       "id": 4,
       "category": {
         "id": 2,
-        "label": "Carnes"
+        "label": "Meat"
       }
     },
     {
-      "title": "Bife com batatas",
+      "title": "Steak with Fries",
       "description": "Bife de boi (150g) na chapa, com batatas fritas. Acompanha arroz e molhos.",
       "photo": "/assets/dishes/bife_com_batatas.png",
       "size": 550,
@@ -61,12 +61,12 @@
       "id": 5,
       "category": {
         "id": 2,
-        "label": "Carnes"
+        "label": "Meat"
       }
     },
     {
-      "title": "Picanha picada com legumes e massa",
-      "description": "400g de picanha picada, com legumes grelhados e massa escolhida pelo cliente.",
+      "title": "Chopped rumped steak with vegetables and pasta",
+      "description": "400g steak with grilled vegetables and pasta chosen by the customer.",
       "photo": "/assets/dishes/picanha_picada.png",
       "size": 850,
       "serving": 3,
@@ -78,8 +78,8 @@
       }
     },
     {
-      "title": "Lasagna vegana (carne de soja)",
-      "description": "Lasagna 100% vegana feita com carne de soja e massa especial.",
+      "title": "Vegan Lasagna (Soy Protein)",
+      "description": "100% vegan lasagna made with soy meat and special pasta.",
       "photo": "/assets/dishes/lasagna_vegana.png",
       "size": 350,
       "serving": 1,
@@ -87,12 +87,12 @@
       "id": 7,
       "category": {
         "id": 4,
-        "label": "Veganos"
+        "label": "Vegan"
       }
     },
     {
-      "title": "Salada especial",
-      "description": "Salada com abacate, manga, alface, grão de bico e muito mais.",
+      "title": "Special Salad",
+      "description": "Salad with avocado, mango, lettuce, chickpeas and more.",
       "photo": "/assets/dishes/salada_especial.png",
       "size": 350,
       "serving": 1,
@@ -100,12 +100,12 @@
       "id": 8,
       "category": {
         "id": 4,
-        "label": "Veganos"
+        "label": "Vegan"
       }
     },
     {
-      "title": "Almôndegas",
-      "description": "Porção de almôndegas com sour cream, cebola e tempêros. Acompanha arroz ou massa.",
+      "title": "Meatballs",
+      "description": "Portion of meatballs with sour cream, onion and seasonings. Served with rice or pasta.",
       "photo": "/assets/dishes/almondegas.png",
       "size": 740,
       "serving": 3,

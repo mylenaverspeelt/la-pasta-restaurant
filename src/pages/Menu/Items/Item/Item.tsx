@@ -46,7 +46,7 @@ export default function Item({
           </div>
           <div className={style.item__porcao}>{size}g</div>
           <div className={style.item__qtdpessoas}>
-            Serve {serving} pessoa{serving === 1 ? "" : "s"}{" "}
+            Serves {serving} {serving === 1 ? "person" : "people"}{" "}
           </div>
           <div className={style.item__valor}>{price.toFixed(2)}</div>
         </div>
