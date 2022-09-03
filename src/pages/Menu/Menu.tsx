@@ -17,7 +17,7 @@ export default function Menu() {
     <main>
       <section className={style.container}>
         <h3 className={style.titulo}>Menu</h3>
-        <Searcher search={search} setSearch={setSearch} />
+        <Searcher search={search} setSearch={setSearch} />  
         <div className={style.cardapio__filtros}>
           <Options userSelectedOption={userSelectedOption} setUserSelectedOption={setuserSelectedOption}/>
           <Filters filter={filter} setFilter={setFilter}/>
