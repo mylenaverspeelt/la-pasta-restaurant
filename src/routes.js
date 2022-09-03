@@ -6,6 +6,8 @@ import Menu from "pages/Menu/Menu";
 import About from "pages/About/About";
 import Header from "components/Header/Header";
 import Nav from "components/Nav/Nav";
+import Footer from "components/Footer/Footer";
+import NotFound from "pages/NotFound/NotFound";
 
 export default function AppRouter() {
   return (
@@ -17,7 +19,9 @@ export default function AppRouter() {
           <Route path="menu" element={<Menu />} />
         </Route>
         <Route path="about" element={<About />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
