@@ -26,9 +26,9 @@ export default function Homepage() {
       </div>
       <h3 className={style.titulo}>Our place</h3>
       <div className={style.nossaCasa}> 
-        <img src={nossaCasa} alt="Casa do La Pasta" />
+        <img src={nossaCasa} alt="La Pasta Restaurant" />
         <p className={style.nossaCasa__endereco}>
-            Avenida Agamenon, 420 <br/> Caruaru - PE <br/> 
+            Avenida Boa Viagem, 420 <br/> Recife - PE <br/> 
         </p>
       </div>
 

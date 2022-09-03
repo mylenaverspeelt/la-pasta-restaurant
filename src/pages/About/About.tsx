@@ -13,20 +13,15 @@ export default function About() {
         <img src={casa} alt="La Pasta Restaurant" />
         <div className={style.sobreNos__texto}>
           <p>
-            Nós do Aluroni oferecemos a vocês, nossos queridos clientes, a Massa
-            Italiana Caseira mais saborosa e sofisticada de São Paulo! Prezamos
-            pelos ingredientes tradicionais da culinária Italiana, frescos e de
-            excelente qualidade para que sua experiência seja ainda mais
-            intensa!
+          La Pasta Restaurant offers you, our dear customers, the tastiest and most sophisticated Homemade Italian Pasta in Pernambuco! We cherish the traditional ingredients of Italian cuisine, fresh and excellent quality to make your experience even more intense!
           </p>
           <p>
-            Também possuímos uma cardápio de carnes com muitas opções de acordo
-            com o seu gosto!
+          We also have a meat menu with many options according to your taste!
           </p>
           <p>
-            Para acompanhar as massas italianas, Aluroni possui uma reserva de
-            vinhos especiais, que harmonizam perfeitamente com o seu parto, seja
-            carne ou massa!
+          We have a reserve of
+             special wines that harmonize perfectly with your dish, whether
+             meat or pasta!
           </p>
         </div>
       </div>

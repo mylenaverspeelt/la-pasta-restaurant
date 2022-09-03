@@ -10,4 +10,6 @@
 body {
   line-height: 1;
   background-color: #f6f6f6;
+  background-image: url(../public/assets/az-subtle.png);
+  background-repeat: repeat;
 }
