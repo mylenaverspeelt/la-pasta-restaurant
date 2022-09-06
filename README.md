@@ -1,6 +1,6 @@
 # La pasta restaurant
 
-A fictitious italian restaurant menu made with React and Typescript!
+A fictitious italian restaurant website made with React and Typescript!
 
 <img src="./public/assets/read-me-img.png"/>
 
