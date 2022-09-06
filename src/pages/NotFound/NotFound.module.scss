@@ -16,6 +16,18 @@
     @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
         padding: 20px $padding-horizontal-md;
     }
+
     display: flex;
     justify-content: center;
+}
+
+.voltar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    border: none;
+    color: $red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
