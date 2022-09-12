@@ -8,6 +8,7 @@ import Header from "components/Header/Header";
 import Nav from "components/Nav/Nav";
 import Footer from "components/Footer/Footer";
 import NotFound from "pages/NotFound/NotFound";
+import Dish from "pages/Dish/Dish";
 
 export default function AppRouter() {
   return (
@@ -20,6 +21,7 @@ export default function AppRouter() {
         </Route>
         <Route path="about" element={<About />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='dish/:id' element={<Dish />} />
       </Routes>
       <Footer />
     </Router>
@@ -32,3 +34,7 @@ export default function AppRouter() {
 
 
 //nesse caso, em qqr pagina, independente do path, vai ser renderizado o nav. Embaixo tem uma nested route, todo route que começar com / vai exibir o elemento indicado. Como ta nested, atraves do outlet importado do router-dom (no arquivo header) vc consegue acessar a propriedade children, dai se esse route tiver children como é o caso, todo path q tiver após o / vai ser renderizado o elemento indicado. Fora desse nested, tem um About, por ta fora do nested ele não renderiza o Header, apenas o nav pq ta pra geral.
+
+//o asterisco significa todos, então qualquer pagina diferente das q foram especificadas, dá no not found
+
+//o /:id é como se fosse um valor dinamico, pq o path pra exibir os pratos é o mesmo, o que muda é cada prato em si, e isso se diferencia pelo id de cada prato que é unico.
