@@ -52,6 +52,7 @@ export default function Items({ search, filter, userSelectedOption }: Props) {
       {list.map((item) => (
         <Item
           key={item.id}
+          id={item.id}
           title={item.title}
           description={item.description}
           category={item.category}

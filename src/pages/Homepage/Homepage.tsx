@@ -12,7 +12,7 @@ export default function Homepage() {
     .splice(0, 3);
 
   const navigate = useNavigate();
-
+  
   function redirectToSeeMore(dish: Dish){
     navigate(`/dish/${dish.id}`, { state: {dish}});
 

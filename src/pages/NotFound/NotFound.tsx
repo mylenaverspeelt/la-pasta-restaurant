@@ -15,8 +15,9 @@ export default function NotFound() {
       <button className={style.voltar} onClick={() => navigate(-1)}>
         {" < Go back"}
       </button>
-
-      <NotFoundImage />
+      <div className={style.svg}>
+        <NotFoundImage />
+      </div>
     </div>
   );
 }

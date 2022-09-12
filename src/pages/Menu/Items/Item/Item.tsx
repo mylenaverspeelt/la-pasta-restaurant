@@ -1,32 +1,19 @@
 //item em si do cardapio, que vai ser renderizado apos a escolha do usuario. é o elemento em si, com foto, porção, valor...
 
 import style from "./Item.module.scss";
-import classNames from "classnames";
+import DishTags from "components/DishTags/DishTags";
+import { Dish } from "types/dish";
+import { useNavigate } from "react-router-dom";
 
-interface Props {
-  title: string;
-  description: string;
-  photo: string;
-  price: number;
-  serving: number;
-  size: number;
-  category: {
-    id: number;
-    label: string;
-  };
-}
 
-export default function Item({
-  title,
-  description,
-  category,
-  photo,
-  size,
-  price,
-  serving,
-}: Props) {
+
+export default function Item(Props: Dish) {
+  const { id, title, description, photo} = Props;
+
+  const navigate = useNavigate();
+
   return (
-    <div className={style.item}>
+    <div className={style.item} onClick={() => navigate(`/dish/${id}`)}>
       <div className={style.item__imagem}>
         <img src={photo} alt={title} />
       </div>
@@ -35,21 +22,7 @@ export default function Item({
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className={style.item__tags}>
-          <div
-            className={classNames({
-              [style.item__tipo]: true,
-              [style[`item__tipo__${category.label.toLowerCase()}`]]: true,
-            })}
-          >
-            {category.label}
-          </div>
-          <div className={style.item__porcao}>{size}g</div>
-          <div className={style.item__qtdpessoas}>
-            Serves {serving}{serving === 1 ? " person" : " people"}{" "}
-          </div>
-          <div className={style.item__valor}>{price.toFixed(2)}</div>
-        </div>
+        <DishTags {...Props}/>
       </div>
     </div>
   );

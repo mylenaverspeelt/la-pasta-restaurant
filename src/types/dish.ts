@@ -1,4 +1,4 @@
-import menu from 'data/menu.json'
+import menu from "data/menu.json";
 
 export type Menu = typeof menu;
 
