@@ -2,6 +2,7 @@ import menu from "../../data/menu.json";
 import style from "./Homepage.module.scss";
 import nossaCasa from "../../assets/homepage/nossaCasa.png";
 import { useNavigate } from "react-router-dom";
+import { Dish } from "types/dish";
 export default function Homepage() {
 
   //sortear 3 imagens aleatorias
@@ -11,7 +12,8 @@ export default function Homepage() {
     .splice(0, 3);
 
   const navigate = useNavigate();
-  function redirectToSeeMore(dish: typeof menu[0]){
+
+  function redirectToSeeMore(dish: Dish){
     navigate(`/dish/${dish.id}`, { state: {dish}});
 
   }

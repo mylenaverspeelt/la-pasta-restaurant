@@ -33,7 +33,7 @@ export default function AppRouter() {
 //route: de fato o path completo da pagina, sao filhos do routes e podem ter elementos children pra acessa-los.
 
 
-//nesse caso, em qqr pagina, independente do path, vai ser renderizado o nav. Embaixo tem uma nested route, todo route que começar com / vai exibir o elemento indicado. Como ta nested, atraves do outlet importado do router-dom (no arquivo header) vc consegue acessar a propriedade children, dai se esse route tiver children como é o caso, todo path q tiver após o / vai ser renderizado o elemento indicado. Fora desse nested, tem um About, por ta fora do nested ele não renderiza o Header, apenas o nav pq ta pra geral.
+//nesse caso, em qqr pagina, independente do path, vai ser renderizado o nav e o footer. Embaixo tem uma nested route, todo route que começar com / vai exibir o elemento indicado. Como ta nested, atraves do outlet importado do router-dom (no arquivo header) vc consegue acessar a propriedade children, dai se esse route tiver children como é o caso, todo path q tiver após o / vai ser renderizado o elemento indicado. Fora desse nested, tem um About, por ta fora do nested ele não renderiza o Header, apenas o nav pq ta pra geral.
 
 //o asterisco significa todos, então qualquer pagina diferente das q foram especificadas, dá no not found
 

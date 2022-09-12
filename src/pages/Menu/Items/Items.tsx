@@ -4,6 +4,7 @@ import menu from "../../../data/menu.json";
 import Item from "./Item/Item";
 import style from "./Items.module.scss";
 import { useEffect, useState } from "react";
+import { Menu } from "types/dish";
 
 
 interface Props {
@@ -25,7 +26,7 @@ export default function Items({ search, filter, userSelectedOption }: Props) {
     return true;
   }
 
-  function order(newList: typeof menu) {
+  function order(newList: Menu) {
     switch (filter) {
     case "porcao":
       return newList.sort((a, b) => a.size > b.size ? 1 : -1);
