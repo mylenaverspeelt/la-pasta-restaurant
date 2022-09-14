@@ -10,7 +10,7 @@ export default function About() {
     <section className={style.container}>
       <h3 className={style.titulo}>About</h3>
       <div className={style.sobreNos}>
-        <img src={casa} alt="La Pasta Restaurant" />
+        <img className={style.sobreNos__img} src={casa} alt="La Pasta Restaurant" />
         <div className={style.sobreNos__texto}>
           <p>
           La Pasta Restaurant offers you, our dear customers, the tastiest and most sophisticated Homemade Italian Pasta in Pernambuco! We cherish the traditional ingredients of Italian cuisine, fresh and excellent quality to make your experience even more intense!

@@ -22,3 +22,4 @@ export default function DishTags({ category, size, serving, price} : Dish) {
     </div>
   );
 }
+

@@ -1,19 +1,21 @@
 @import "styles/variaveis";
 @import "styles/breakpoints";
+
 .item {
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 2rem;
   transition: .2s ease-in;
   width: 90%;
   &:hover {
     background-color: $grey;
   }
+
   &__imagem {
-    min-width: 240px;
+    width: 20rem;
     @media (max-width: $desktop_xsm) {
       width: 100%;
     }
