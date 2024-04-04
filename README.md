@@ -1,16 +1,22 @@
 # La pasta restaurant
 
-A fictitious italian restaurant website made with React and Typescript!
+Um site fictício de restaurante italiano feito com React e Typescript!
 
+## Visite o Site
+
+O site está atualmente hospedado na Vercel e pode ser acessado através do seguinte link:
+
+* https://la-pasta-restaurant.vercel.app/
 
 <img src="./public/assets/read-me-img.png"/>
 
-### Features
+### Funcionalidades
 
-- Search for dishes by typing the name
-- Filter dishes by portion, price and how many people it serves
-
-### Libraries used
+- Busca por pratos digitando o nome
+- Filtra os pratos por porção, preço e quantas pessoas serve
+- Pagina totalmente responsiva
+  
+### Bibliotecas Utilizadas
 
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [classNames](https://www.npmjs.com/package/classnames/)
@@ -18,37 +24,53 @@ A fictitious italian restaurant website made with React and Typescript!
 - [ESLint](https://eslint.org/)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 
-### Original repos
-- [aluroni-introducao](https://github.com/alura-cursos/aluroni-introducao)
-- [aluroni-router](https://github.com/alura-cursos/aluroni-router)
-- [aluroni-performance](https://github.com/alura-cursos/aluroni-performance)
 
-## Step 1 - Dependencies
+## Como Instalar e Executar o Projeto na Sua Máquina
 
-You will need:
+### Passo 1 - Requisitos
 
+Você vai precisar de:
 * [Git](http://git-scm.com/downloads)
-* [node](https://nodejs.org/) 
+* [node](https://nodejs.org/)
+* [npm packages](https://www.npmjs.com/)
 
 Please install them if you don't have them already.
 
-## Step 2 - Clone the repository:
-
-From the command line, clone the repository:
+### Passo 2 - Clone o repositório
 
 ```sh
 $ git clone https://github.com/mylenaverspeelt/la-pasta-restaurant.git
 ```
 
-## Step 3 - Run the app
+### Passo 3 - Rode a aplicação
 
-Once the dependencies are installed (npm install), you can run the app:
+- Certifique de estar na pasta raiz do projeto
 
 ```sh
 cd la-pasta-restaurant
+```
+- Instale as  as dependências do projeto
+
+```sh
+npm install
+```
+
+- Inicie o servidor React
+
+```sh
 npm start
 ```
-Your browser should open up the running app, or you can access: http://localhost:3000/
 
-Developed by: Mylena Verspeelt 🦜
+O projeto estará disponível em localhost:3000
+
+
+### Repositórios originais
+
+Este projeto foi desenvolvido durante a trilha de Typscript + React da Alura. Você pode acessar o repositorio original nos seguintes links:
+
+- [aluroni-introducao](https://github.com/alura-cursos/aluroni-introducao)
+- [aluroni-router](https://github.com/alura-cursos/aluroni-router)
+- [aluroni-performance](https://github.com/alura-cursos/aluroni-performance)
+
+
  
