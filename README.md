@@ -13,8 +13,9 @@ O site está atualmente hospedado na Vercel e pode ser acessado através do segu
 ### Funcionalidades
 
 - Busca por pratos digitando o nome
-- Filtra os pratos por porção, preço e quantas pessoas serve
-- Pagina totalmente responsiva
+- Ordenamento dos pratos por porção, preço e quantas pessoas serve
+- Categorias dos tipos de prato
+- SPA responsiva
   
 ### Bibliotecas Utilizadas
 
@@ -61,8 +62,14 @@ npm install
 npm start
 ```
 
-O projeto estará disponível em localhost:3000
+O projeto estará disponível em localhost:3000 :)
 
+PS: Se ao rodar o projeto o ESLint apontar alguma questão, você pode corrigi-la facilmente executando o seguinte comando:
+
+```sh
+npx eslint ./src --fix
+```
+Isso garantirá que o código siga o padrão definido pelo ESLint e mantenha a consistência em todo o projeto
 
 ### Repositórios originais
 
