@@ -1,131 +1,132 @@
 [
-    {
-      "title": "Mediterranean Spaghetti",
-      "description": "Spaghetti noodles with seafood, a lot of cherry tomato and spices. Warning: Contains shrimp and other seafood!",
-      "photo": "/assets/dishes/macarrao_mediterraneo.png",
-      "size": 400,
-      "serving": 2,
-      "price": 73.0,
+  {
+    "title": "Espaguete Mediterrâneo",
+    "description": "Espaguete com frutos do mar, muitos tomates cereja e especiarias. Aviso: Contém camarão e outros frutos do mar!",
+    "photo": "/assets/dishes/macarrao_mediterraneo.png",
+    "size": 400,
+    "serving": 2,
+    "price": 73.0,
+    "id": 1,
+    "category": {
       "id": 1,
-      "category": {
-        "id": 1,
-        "label": "Pastas"
-      }
-    },
-    {
-      "title": "Signature Pasta",
-      "description": "Fettuccine pasta with filet mignon cubes, herbs and spices.",
-      "photo": "/assets/dishes/macarrao_da_casa.png",
-      "size": 400,
-      "serving": 2,
-      "price": 54.0,
-      "id": 2,
-      "category": {
-        "id": 1,
-        "label": "Pastas"
-      }
-    },
-    {
-      "title": "Fettuccine chilli",
-      "description": "Fettuccine pasta with chili sauce and spices.",
-      "photo": "/assets/dishes/macarrao_com_chilli.png",
-      "size": 350,
-      "serving": 1,
-      "price": 58.0,
-      "id": 3,
-      "category": {
-        "id": 1,
-        "label": "Pastas"
-      }
-    },{
-      "title": "Ravioli Tomato",
-      "description": "Ravioli with tomato sauce and pea.",
-      "photo": "/assets/dishes/ravioli-tomato-pea2.jpg",
-      "size": 400,
-      "serving": 1,
-      "price": 40.0,
-      "id": 4,
-      "category": {
-        "id": 1,
-        "label": "Pastas"
-      }
-    },
-    {
-      "title": "Signature Salad with Grilled Salmon",
-      "description": "Organic salad (lettuce, rocket and carrots) with salmon (180g)",
-      "photo": "/assets/dishes/salada_da_casa.png",
-      "size": 450,
-      "serving": 1,
-      "price": 42.0,
-      "id": 5,
-      "category": {
-        "id": 2,
-        "label": "Meat"
-      }
-    },
-    {
-      "title": "Steak with Fries",
-      "description": "Bife de boi (150g) na chapa, com batatas fritas. Acompanha arroz e molhos.",
-      "photo": "/assets/dishes/bife_com_batatas.png",
-      "size": 400,
-      "serving": 2,
-      "price": 86.0,
-      "id": 6,
-      "category": {
-        "id": 2,
-        "label": "Meat"
-      }
-    },
-    {
-      "title": "Chopped rumped steak with vegetables and pasta",
-      "description": "400g steak with grilled vegetables and pasta chosen by the customer.",
-      "photo": "/assets/dishes/picanha_picada.png",
-      "size": 850,
-      "serving": 3,
-      "price": 123.0,
-      "id": 7,
-      "category": {
-        "id": 3,
-        "label": "Combos"
-      }
-    },
-    {
-      "title": "Vegan Lasagna (Soy Protein)",
-      "description": "100% vegan lasagna made with soy meat and special pasta.",
-      "photo": "/assets/dishes/lasagna_vegana.png",
-      "size": 350,
-      "serving": 1,
-      "price": 45.0,
-      "id": 8,
-      "category": {
-        "id": 4,
-        "label": "Vegan"
-      }
-    },
-    {
-      "title": "Special Salad",
-      "description": "Salad with avocado, mango, lettuce, chickpeas and more.",
-      "photo": "/assets/dishes/salada_especial.png",
-      "size": 350,
-      "serving": 1,
-      "price": 37.0,
-      "id": 9,
-      "category": {
-        "id": 4,
-        "label": "Vegan"
-      }
-    },
-    {
-      "title": "Meatballs",
-      "description": "Portion of meatballs with sour cream, onion and seasonings. Served with rice or pasta.",
-      "photo": "/assets/dishes/almondegas.png",
-      "size": 740,
-      "serving": 3,
-      "price": 120.0,
-      "id": 10,
-      "category": {
-        "id": 3,
-        "label": "Combos"
-      }
+      "label": "Pastas"
     }
-  ]
+  },
+  {
+    "title": "Massa da Casa",
+    "description": "Massa fettuccine com cubos de filé mignon, ervas e especiarias.",
+    "photo": "/assets/dishes/macarrao_da_casa.png",
+    "size": 400,
+    "serving": 2,
+    "price": 54.0,
+    "id": 2,
+    "category": {
+      "id": 1,
+      "label": "Pastas"
+    }
+  },
+  {
+    "title": "Fettuccine com Pimenta",
+    "description": "Massa fettuccine com molho de pimenta e especiarias.",
+    "photo": "/assets/dishes/macarrao_com_chilli.png",
+    "size": 350,
+    "serving": 1,
+    "price": 58.0,
+    "id": 3,
+    "category": {
+      "id": 1,
+      "label": "Pastas"
+    }
+  },
+  {
+    "title": "Ravioli de Tomate",
+    "description": "Ravioli com molho de tomate e ervilha.",
+    "photo": "/assets/dishes/ravioli-tomato-pea2.jpg",
+    "size": 400,
+    "serving": 1,
+    "price": 40.0,
+    "id": 4,
+    "category": {
+      "id": 1,
+      "label": "Pastas"
+    }
+  },
+  {
+    "title": "Salada da Casa com Salmão Grelhado",
+    "description": "Salada orgânica (alface, rúcula e cenoura) com salmão (180g).",
+    "photo": "/assets/dishes/salada_da_casa.png",
+    "size": 450,
+    "serving": 1,
+    "price": 42.0,
+    "id": 5,
+    "category": {
+      "id": 2,
+      "label": "Meat"
+    }
+  },
+  {
+    "title": "Bife com Batatas Fritas",
+    "description": "Bife de boi (150g) na chapa, com batatas fritas. Acompanha arroz e molhos.",
+    "photo": "/assets/dishes/bife_com_batatas.png",
+    "size": 400,
+    "serving": 2,
+    "price": 86.0,
+    "id": 6,
+    "category": {
+      "id": 2,
+      "label": "Meat"
+    }
+  },
+  {
+    "title": "Picanha Picada com Vegetais e Massa",
+    "description": "Picanha picada (400g) com legumes grelhados e massa escolhida pelo cliente.",
+    "photo": "/assets/dishes/picanha_picada.png",
+    "size": 850,
+    "serving": 3,
+    "price": 123.0,
+    "id": 7,
+    "category": {
+      "id": 3,
+      "label": "Combos"
+    }
+  },
+  {
+    "title": "Lasanha Vegana (Proteína de Soja)",
+    "description": "Lasanha 100% vegana feita com carne de soja e massa especial.",
+    "photo": "/assets/dishes/lasagna_vegana.png",
+    "size": 350,
+    "serving": 1,
+    "price": 45.0,
+    "id": 8,
+    "category": {
+      "id": 4,
+      "label": "Vegan"
+    }
+  },
+  {
+    "title": "Salada Especial",
+    "description": "Salada com abacate, manga, alface, grão-de-bico e mais.",
+    "photo": "/assets/dishes/salada_especial.png",
+    "size": 350,
+    "serving": 1,
+    "price": 37.0,
+    "id": 9,
+    "category": {
+      "id": 4,
+      "label": "Vegan"
+    }
+  },
+  {
+    "title": "Almôndegas",
+    "description": "Porção de almôndegas com creme azedo, cebola e temperos. Servido com arroz ou massa.",
+    "photo": "/assets/dishes/almondegas.png",
+    "size": 740,
+    "serving": 3,
+    "price": 120.0,
+    "id": 10,
+    "category": {
+      "id": 3,
+      "label": "Combos"
+    }
+  }
+]

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={style.footer}>
       <p className={style.p}>
-        Developed by: 
+        Desenvolvido por: 
         <a
           href="https://www.linkedin.com/in/mylenaverspeelt/"
           target="_blank"

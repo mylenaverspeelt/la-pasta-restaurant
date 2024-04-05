@@ -20,7 +20,7 @@ export default function Dish() {
     <Routes>
       <Route path='*' element={<Header />} >
         <Route index element={<div className={style.outsideContainer}>
-          <button className={style.voltar} onClick={() => navigate(-1)}>{"< Go Back"}</button>
+          <button className={style.voltar} onClick={() => navigate(-1)}>{"< Voltar"}</button>
           <section className={style.container}>
             <h1 className={style.titulo}>{dish.title}</h1>
             <div className={style.imagem}>

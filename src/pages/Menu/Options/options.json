@@ -1,10 +1,10 @@
 [
     {
-      "label": "Pastas",
+      "label": "Massas",
       "id": 1
     },
     {
-      "label": "Meat",
+      "label": "Carnes",
       "id": 2
     },
     {
@@ -13,7 +13,7 @@
     },
   
     {
-      "label": "Vegan",
+      "label": "Vegano",
       "id": 4
     }
   ]

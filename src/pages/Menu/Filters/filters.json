@@ -5,17 +5,17 @@
       "id": 0
     },
     {
-      "name": "Portion",
+      "name": "Porção",
       "value": "porcao",
       "id": 1
     },
     {
-      "name": "Serving size",
+      "name": "Serve até",
       "value": "qtd_pessoas",
       "id": 2
     },
     {
-      "name": "Price",
+      "name": "Preço",
       "value": "preco",
       "id": 3
     }

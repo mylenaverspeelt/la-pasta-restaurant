@@ -21,7 +21,7 @@ export default function Homepage() {
   return (
     <>
       <section className={style.container}>
-        <h3 className={style.titulo}>Recommended dishes</h3>
+        <h3 className={style.titulo}>Pratos Recomendados</h3>
         <div className={style.recomendados}>
           {recommendedDishes.map((item) => (
             <div key={item.id} className={style.recomendado}>
@@ -31,7 +31,7 @@ export default function Homepage() {
               </div>
               <button className={style.recomendado__botao}
                 onClick={() => redirectToSeeMore(item)}
-              >See more</button>
+              >Ver mais</button>
             </div>
           ))}
         </div>
@@ -41,7 +41,7 @@ export default function Homepage() {
         <div className={style.nossaCasa}>
           <img src={nossaCasa} alt="La Pasta Restaurant" />
           <p className={style.nossaCasa__endereco}>
-            Avenida Boa Viagem, 420 <br /> Recife - PE <br />
+            Avenida Pernambuco, 081 <br /> Recife - PE <br />
           </p>
         </div>
       </div>

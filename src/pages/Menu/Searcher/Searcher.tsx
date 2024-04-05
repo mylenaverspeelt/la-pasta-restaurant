@@ -15,7 +15,7 @@ export default function Searcher({ search, setSearch }: Props) {
         onChange={(e) => {
           setSearch(e.target.value);
         }}
-        placeholder="Search"
+        placeholder="Buscar"
         value={search}
       />
       <CgSearch size={20} color="#4C4D5E" />

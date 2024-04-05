@@ -15,8 +15,8 @@ export default function DishTags({ category, size, serving, price} : Dish) {
       </div>
       <div className={style.tags__porcao}>{size}g</div>
       <div className={style.tags__qtdpessoas}>
-        Serves {serving}
-        {serving === 1 ? " person" : " people"}{" "}
+        Serve até {serving}
+        {serving === 1 ? " pessoa" : " pessoas"}{" "}
       </div>
       <div className={style.tags__valor}>{price.toFixed(2)}</div>
     </div>

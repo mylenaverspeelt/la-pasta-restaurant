@@ -27,7 +27,7 @@ export default function Filters({ filter, setFilter }: Props) {
         [style["ordenador--ativo"]]: filter !== "",
       })}
     >
-      <span>{selectedFilterName || "Filter by:"}</span>
+      <span>{selectedFilterName || "Filtrar por:"}</span>
       {open ? (
         <MdKeyboardArrowUp size={20} />
       ) : (

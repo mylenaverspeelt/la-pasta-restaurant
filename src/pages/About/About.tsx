@@ -8,20 +8,18 @@ const images = [massa1, massa2];
 export default function About() {
   return (
     <section className={style.container}>
-      <h3 className={style.titulo}>About</h3>
+      <h3 className={style.titulo}>Sobre Nós</h3>
       <div className={style.sobreNos}>
         <img className={style.sobreNos__img} src={casa} alt="La Pasta Restaurant" />
         <div className={style.sobreNos__texto}>
           <p>
-          La Pasta Restaurant offers you, our dear customers, the tastiest and most sophisticated Homemade Italian Pasta in Pernambuco! We cherish the traditional ingredients of Italian cuisine, fresh and excellent quality to make your experience even more intense!
+            O Restaurante La Pasta oferece a você, nosso querido cliente, a mais saborosa e sofisticada Pasta Italiana caseira em Pernambuco! Valorizamos os ingredientes tradicionais da culinária italiana, frescos e de excelente qualidade, para tornar sua experiência ainda mais intensa!
           </p>
           <p>
-          We also have a meat menu with many options according to your taste!
+            Também temos um menu de carnes com muitas opções de acordo com seu gosto!
           </p>
           <p>
-          We have a reserve of
-             special wines that harmonize perfectly with your dish, whether
-             meat or pasta!
+            Contamos com uma reserva de vinhos especiais que harmonizam perfeitamente com seu prato, seja carne ou massa!
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function Nav(){
       to: "/menu",
     },
     {
-      label: "About",
+      label: "Sobre Nós",
       to: "/about",
     },
   ];
