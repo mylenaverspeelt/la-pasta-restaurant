@@ -11,9 +11,13 @@
   justify-content: space-between;
   padding: 0 15px;
   width: 400px;
+
   @media (max-width: $mobile) {
-    width: 100%;
+    margin: 0 20px;
+    max-width: 100%;
+    width: 90%;
   }
+
   input {
     background-color: $grey;
     border: none;
@@ -21,6 +25,7 @@
     font-weight: bold;
     outline: none;
     width: 100%;
+
     &::placeholder {
       color: #4c4d5e;
     }

@@ -22,7 +22,9 @@ export default function Menu() {
           <Options userSelectedOption={userSelectedOption} setUserSelectedOption={setuserSelectedOption}/>
           <Filters filter={filter} setFilter={setFilter}/>
         </div>
-        <Items search={search} filter={filter} userSelectedOption={userSelectedOption}/>
+        <div className={style.itemContainer}>
+          <Items search={search} filter={filter} userSelectedOption={userSelectedOption}/>
+        </div>
       </section>
     </main>
   );
