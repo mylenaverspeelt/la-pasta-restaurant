@@ -3,16 +3,32 @@
 
 .container {
   padding: 20px $padding-horizontal;
-  @media (max-width: $desktop_xsm) {
-    padding: 20px $padding-horizontal-mobile;
+  max-width: 100%;
+}
+
+@media (max-width: $desktop_xsm) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    max-width: 100%;
+    text-align: center;
   }
-  @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-    padding: 20px $padding-horizontal-sm;
+
+  .nossaCasaContainer {
+    padding: 0 40px !important;
+    text-align: center;
+     
   }
-  @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    padding: 20px $padding-horizontal-md;
+
+  .recomendados {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
+
+
 
 .titulo {
   color: $dark;
@@ -33,11 +49,13 @@
   &__imagem {
     width: 300px;
     margin-bottom: 10px;
+
     img {
       border-radius: 8px;
       width: 100%;
     }
   }
+
   &__botao {
     background-color: $red;
     border: none;
@@ -49,19 +67,23 @@
     padding: 10px 0;
     transition: .2s ease;
     width: 100%;
+
     &:hover {
       background-color: $red-dark;
     }
   }
 }
+
 .nossaCasa {
   margin-bottom: 100px;
   position: relative;
   width: 100%;
+
   img {
     border-radius: 5px;
     width: 100%;
   }
+
   &__endereco {
     align-items: center;
     background-color: $dark;
@@ -81,7 +103,11 @@
   }
 }
 
-.paragrafo{
+.nossaCasaContainer {
+  padding: 20px $padding-horizontal;
+}
+
+.paragrafo {
   text-align: center;
   font-weight: 600;
 }

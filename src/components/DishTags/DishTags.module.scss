@@ -12,15 +12,19 @@ $veganos: #80aa40;
   justify-content: space-between;
   margin-bottom: 20px;
   max-width: 700px;
+  
   @media (max-width: $desktop_xsm) {
-    justify-content: flex-end;
+    justify-content: flex-end;   
   }
+
   @media (max-width: $mobile) {
     justify-content: flex-start;
   }
-div {
+
+  div {
     margin: 10px;
   }
+
   &__tipo {
     align-items: center;
     border-radius: 2px;
@@ -29,21 +33,26 @@ div {
     height: 40px;
     justify-content: center;
     padding: 10px 30px;
+
     &__pastas {
       background-color: $massas;
       color: white;
     }
+
     &__meat {
       background-color: $carnes;
       color: white;
     }
+
     &__combos {
       background-color: $combos;
     }
+
     &__vegan {
       background-color: $veganos;
     }
   }
+
   &__porcao,
   &__qtdpessoas,
   &__valor {
@@ -53,6 +62,7 @@ div {
     font-weight: bold;
     justify-content: center;
   }
+
   &__valor {
     color: $red;
     font-size: 1.7rem;

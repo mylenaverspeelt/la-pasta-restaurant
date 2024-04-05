@@ -12,37 +12,40 @@ export default function Homepage() {
     .splice(0, 3);
 
   const navigate = useNavigate();
-  
-  function redirectToSeeMore(dish: Dish){
-    navigate(`/dish/${dish.id}`, { state: {dish}});
+
+  function redirectToSeeMore(dish: Dish) {
+    navigate(`/dish/${dish.id}`, { state: { dish } });
 
   }
 
   return (
-    <section className={style.container}>
-      <h3 className={style.titulo}>Recommended dishes</h3>
-      <div className={style.recomendados}>
-        {recommendedDishes.map((item) => (
-          <div key={item.id} className={style.recomendado}>
-            <div className={style.recomendado__imagem}>
-              <img src={item.photo} alt={item.title} />
-              <p className={style.paragrafo}>{item.title}</p>
+    <>
+      <section className={style.container}>
+        <h3 className={style.titulo}>Recommended dishes</h3>
+        <div className={style.recomendados}>
+          {recommendedDishes.map((item) => (
+            <div key={item.id} className={style.recomendado}>
+              <div className={style.recomendado__imagem}>
+                <img src={item.photo} alt={item.title} />
+                <p className={style.paragrafo}>{item.title}</p>
+              </div>
+              <button className={style.recomendado__botao}
+                onClick={() => redirectToSeeMore(item)}
+              >See more</button>
             </div>
-            <button className={style.recomendado__botao}
-              onClick={() => redirectToSeeMore(item)}
-            >See more</button>
-          </div>
-        ))}
+          ))}
+        </div>
+      </section>
+      <div className={style.nossaCasaContainer}>
+        <h3 className={style.titulo}>Our place</h3>
+        <div className={style.nossaCasa}>
+          <img src={nossaCasa} alt="La Pasta Restaurant" />
+          <p className={style.nossaCasa__endereco}>
+            Avenida Boa Viagem, 420 <br /> Recife - PE <br />
+          </p>
+        </div>
       </div>
-      <h3 className={style.titulo}>Our place</h3>
-      <div className={style.nossaCasa}> 
-        <img src={nossaCasa} alt="La Pasta Restaurant" />
-        <p className={style.nossaCasa__endereco}>
-            Avenida Boa Viagem, 420 <br/> Recife - PE <br/> 
-        </p>
-      </div>
-
-    </section>
+    </>
   );
 }
 
