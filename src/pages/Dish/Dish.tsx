@@ -4,7 +4,7 @@ import menu from "data/menu.json";
 import DishTags from "components/DishTags/DishTags";
 import NotFound from "pages/NotFound/NotFound";
 import Header from "../../components/Header/Header";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 export default function Dish() {
   const { id } = useParams();
@@ -19,7 +19,7 @@ export default function Dish() {
   return (
     <Routes>
       <Route path='*' element={<Header />} >
-        <Route index element={<> 
+        <Route index element={<div className={style.outsideContainer}>
           <button className={style.voltar} onClick={() => navigate(-1)}>{"< Go Back"}</button>
           <section className={style.container}>
             <h1 className={style.titulo}>{dish.title}</h1>
@@ -30,7 +30,7 @@ export default function Dish() {
               <p className={style.conteudo__descricao}>{dish.description}</p>
             </div>
             <DishTags {...dish} />
-          </section></>} />
+          </section></div>} />
       </Route>
     </Routes>
   );
